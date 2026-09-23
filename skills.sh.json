@@ -7,9 +7,7 @@
 			"description": "Skills for building production-quality React and React Native interfaces.",
 			"skills": [
 				"vercel-react-best-practices",
-				"nerdfish-react-best-practises",
 				"vercel-composition-patterns",
-				"nerdfish-composition-early-returns",
 				"vercel-react-view-transitions",
 				"vercel-react-native-skills"
 			]

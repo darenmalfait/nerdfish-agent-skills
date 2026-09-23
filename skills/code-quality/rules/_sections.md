@@ -9,4 +9,4 @@ The section ID (in parentheses) is the filename prefix used to group rules.
 
 **Impact:** HIGH  
 **Description:** Clarity over cleverness, comments that explain why not what,
-and thorough code review that addresses nits before merge.
+thorough code review, and avoiding bare `useEffect`.

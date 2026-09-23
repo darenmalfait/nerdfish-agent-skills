@@ -1,6 +1,7 @@
 # Monorepo Architecture
 
-Structured rules for vertical slices and acyclic package dependencies.
+Structured rules for vertical slices, acyclic dependencies, and factory entry
+points.
 
 ## Structure
 
@@ -21,8 +22,12 @@ Structured rules for vertical slices and acyclic package dependencies.
 
 - `architecture-circular-dependencies.md` - Never import upward
 
+### Entry-point factories (HIGH)
+
+- `patterns-factory-entry-points.md` - Push conditionals to routes/factories
+
 ## Creating a New Rule
 
-1. Copy `rules/_template.md` to `rules/architecture-description.md`
+1. Copy `rules/_template.md` to `rules/{prefix}-description.md`
 2. Fill in frontmatter and content
 3. Update `_sections.md`, `SKILL.md`, and `AGENTS.md`

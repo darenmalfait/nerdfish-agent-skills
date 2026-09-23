@@ -34,8 +34,9 @@ skills/
 ### Do not silently fork Vercel skills
 
 Vendored Vercel directories (`react-best-practices`, `composition-patterns`, etc.)
-should stay close to upstream. Nerdfish divergences get their **own** skill
-name (`react-best-practises`, `composition-early-returns`).
+should stay close to upstream. Do **not** fork them. Nerdfish-only rules go in
+overlay skills (`code-quality`, `monorepo-architecture`, …) — never duplicate
+upstream content.
 
 ### SKILL.md Format
 

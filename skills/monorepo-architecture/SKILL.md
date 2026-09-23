@@ -1,10 +1,10 @@
 ---
 name: nerdfish-monorepo-architecture
 description: >
-  Monorepo architecture patterns: organize app code by domain (vertical slices)
-  and keep an acyclic package dependency graph. Use when structuring features,
-  placing code in packages vs app features, reviewing imports, or fixing
-  circular dependencies in a pnpm/Turbo monorepo.
+  Monorepo architecture patterns: organize app code by domain (vertical slices),
+  keep an acyclic package dependency graph, and push kind/type conditionals to
+  entry-point factories. Use when structuring features, reviewing imports,
+  fixing circular dependencies, or refactoring services littered with switches.
 license: MIT
 metadata:
   author: nerdfish
@@ -14,6 +14,7 @@ metadata:
 # Monorepo Architecture
 
 Organize by domain, not by technical layer. Keep the dependency graph acyclic.
+Push product/kind conditionals to routes and factories.
 
 ## When to Apply
 
@@ -23,6 +24,7 @@ Reference these guidelines when:
 - Reviewing cross-package / cross-feature imports
 - Refactoring layered folders into slices
 - Hunting circular dependencies
+- Services switching on `kind` / `type` / product flags
 
 ## Rule Categories by Priority
 
@@ -30,6 +32,7 @@ Reference these guidelines when:
 | -------- | -------------------- | -------- | ---------------- |
 | 1        | Vertical slices      | CRITICAL | `architecture-`  |
 | 2        | Acyclic dependencies | CRITICAL | `architecture-`  |
+| 3        | Entry-point factories| HIGH     | `patterns-`      |
 
 ## Quick Reference
 
@@ -43,11 +46,17 @@ Reference these guidelines when:
 - `architecture-circular-dependencies` - lib → packages → features → app; never
   import upward
 
+### 3. Entry-point factories (HIGH)
+
+- `patterns-factory-entry-points` - Push conditionals to routes/factories; keep
+  domain modules branch-free
+
 ## How to Use
 
 ```
 rules/architecture-vertical-slices.md
 rules/architecture-circular-dependencies.md
+rules/patterns-factory-entry-points.md
 ```
 
 ## Full Compiled Document

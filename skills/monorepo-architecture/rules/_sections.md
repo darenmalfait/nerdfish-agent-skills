@@ -16,3 +16,9 @@ composition. Features export blocks, not full pages.
 **Impact:** CRITICAL  
 **Description:** Keep an acyclic graph: shared lib → shared packages → features
 → app routes. Never import upward.
+
+## 3. Entry-point factories (patterns)
+
+**Impact:** HIGH  
+**Description:** Push kind/type/product conditionals to routes and factories so
+domain modules stay single-purpose and branch-free.

@@ -39,28 +39,16 @@ Simple doesn't mean anemic — matching an existing pattern is not gold-plating.
 
 Comments should explain "why" not "what". Skip obvious comments.
 
-**When to comment:** business decisions, workarounds, non-obvious optimizations,
-security considerations, troubleshooting context.
-
-**Incorrect:**
-
-```typescript
-// Get the post
-const post = await blog.get({ slug, locale })
-```
-
-**Correct:**
-
-```typescript
-// Secure cookies are dropped on http://localhost, which breaks
-// localePrefix: 'as-needed'
-secure: process.env.NODE_ENV === 'production',
-```
-
 ## 3. Address All Nits Before Merging
 
 **Impact: HIGH**
 
-Don't merge with a pile of nits. Request changes; fix before merge. Challenge
-shortcuts respectfully (hard-coded strings, untested UI, copy-paste instead of
-the existing pattern).
+Don't merge with a pile of nits. Request changes; fix before merge.
+
+## 4. No Bare useEffect
+
+**Impact: HIGH**
+
+Avoid bare `useEffect` for syncing props/state or one-off setup. Prefer derived
+values, event handlers, framework data APIs, and an explicit mount-only hook for
+rare subscribe/cleanup on mount.

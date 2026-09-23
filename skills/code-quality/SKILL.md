@@ -2,9 +2,9 @@
 name: nerdfish-code-quality
 description: >
   Code quality standards: clarity over cleverness, comments that explain why
-  not what, and thorough code review that addresses nits before merge. Use when
-  reviewing PRs, writing comments, simplifying clever code, or discussing
-  maintainability.
+  not what, thorough code review, and avoiding bare useEffect. Use when
+  reviewing PRs, writing comments, simplifying clever code, or cleaning up
+  effects.
 license: MIT
 metadata:
   author: nerdfish
@@ -23,6 +23,7 @@ Reference these guidelines when:
 - Adding comments
 - Reviewing pull requests
 - Challenging “good enough for now” shortcuts
+- Replacing bare `useEffect` with derived state / handlers / mount hooks
 
 ## Rule Categories by Priority
 
@@ -37,6 +38,7 @@ Reference these guidelines when:
 - `quality-simplicity` - Clarity over cleverness
 - `quality-code-comments` - Comments explain why, not what
 - `quality-thorough-code-review` - Address all nits before merge
+- `quality-no-use-effect` - No bare `useEffect`; prefer derived/handlers/mount
 
 ## How to Use
 
@@ -46,12 +48,8 @@ Read individual rule files for detailed explanations and code examples:
 rules/quality-simplicity.md
 rules/quality-code-comments.md
 rules/quality-thorough-code-review.md
+rules/quality-no-use-effect.md
 ```
-
-Each rule file contains:
-
-- Brief explanation of why it matters
-- Incorrect / correct examples
 
 ## Full Compiled Document
 
