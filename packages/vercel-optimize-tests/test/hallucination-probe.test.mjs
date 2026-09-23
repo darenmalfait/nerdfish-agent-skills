@@ -87,10 +87,10 @@ test('triple-backtick code fence with $5 example is preserved', () => {
 
 test('skill-rule citation format is recognized as valid', async () => {
   // skill:rule refs aren't URLs — the harness resolves them through lookupSkillRule.
-  const known = await isKnownUrl('vercel-react-best-practices:async-parallel');
+  const known = await isKnownUrl('nerdfish-react-best-practices:async-parallel');
   assert.equal(known, false, "skill-rule isn't a URL in the library");
 
-  const rec = { citations: ['vercel-react-best-practices:async-parallel'] };
+  const rec = { citations: ['nerdfish-react-best-practices:async-parallel'] };
   const { rec: out, strippedUnknown } = await sanitizeCitations(rec, 'next', '15.0.0');
   assert.equal(strippedUnknown.length, 0, 'skill-rule reference accepted');
   assert.equal(out.citations.length, 1);

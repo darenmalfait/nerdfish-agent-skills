@@ -67,7 +67,7 @@ const sampleRec = {
   o11ySignal: 'inv=4923,p95=1067ms',
   citations: [
     'https://react.dev/reference/react/cache',
-    'vercel-react-best-practices:async-parallel',
+    'nerdfish-react-best-practices:async-parallel',
   ],
   impactLabel: { performance: 'Reduce /dashboard/[sessionId] p95 from 1066ms toward ~400-600ms' },
   priority: 5253,

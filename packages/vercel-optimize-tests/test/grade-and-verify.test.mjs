@@ -89,7 +89,7 @@ test('extractClaims: emits citation_in_library for every URL citation', () => {
   const rec = {
     citations: [
       'https://vercel.com/docs/caching/cdn-cache',
-      'vercel-react-best-practices:async-parallel',
+      'nerdfish-react-best-practices:async-parallel',
     ],
   };
   const claims = extractClaims(rec, { framework: 'next', version: '15.4.10' });
@@ -101,7 +101,7 @@ test('extractClaims: only emits citation_applies_to_version for URLs (not skill-
   const rec = {
     citations: [
       'https://vercel.com/docs/caching/cdn-cache',
-      'vercel-react-best-practices:async-parallel',
+      'nerdfish-react-best-practices:async-parallel',
     ],
   };
   const claims = extractClaims(rec, { framework: 'next', version: '15.4.10' });
@@ -1185,7 +1185,7 @@ test('extractClaims + verifyClaim: route-error not-found catches need explicit 4
 test('verifyClaim: citation_in_library accepts skill-rule format', async () => {
   const r = await verifyClaim({
     type: 'citation_in_library',
-    url: 'vercel-react-best-practices:async-parallel',
+    url: 'nerdfish-react-best-practices:async-parallel',
   });
   assert.equal(r.disposition, 'verified');
 });

@@ -43,7 +43,7 @@ test('isKnownUrl false for stale Next.js hyphenated cache API URLs', async () =>
 });
 
 test('lookupSkillRule resolves rule names', async () => {
-  const r = await lookupSkillRule('vercel-react-best-practices:async-parallel');
+  const r = await lookupSkillRule('nerdfish-react-best-practices:async-parallel');
   assert.ok(r);
   assert.equal(r.rule, 'async-parallel');
 });
@@ -127,10 +127,10 @@ test('sanitizeCitations strips version-mismatched URL', async () => {
 
 test('sanitizeCitations: skill-rule refs are version-aware', async () => {
   // server-after-nonblocking is next@>=15.0.0 (after() is 15+).
-  const rec = { citations: ['vercel-react-best-practices:server-after-nonblocking'] };
+  const rec = { citations: ['nerdfish-react-best-practices:server-after-nonblocking'] };
   const { strippedVersion: vNext14 } = await sanitizeCitations(rec, 'next', '14.0.0');
   // sanitizeCitations mutates the rec — reset before re-running.
-  rec.citations = ['vercel-react-best-practices:server-after-nonblocking'];
+  rec.citations = ['nerdfish-react-best-practices:server-after-nonblocking'];
   const { rec: outNext15 } = await sanitizeCitations(rec, 'next', '15.0.0');
 
   assert.equal(vNext14.length, 1, 'after() should not match Next 14');

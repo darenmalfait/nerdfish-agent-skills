@@ -20,7 +20,7 @@ const baseRec = {
   affectedFiles: ['src/app/product/page.tsx'],
   candidateRef: 'slow_route:/product',
   o11ySignal: 'inv=10000,p95=1200ms',
-  citations: ['vercel-react-best-practices:async-parallel', 'https://nextjs.org/docs/app/building-your-application/data-fetching'],
+  citations: ['nerdfish-react-best-practices:async-parallel', 'https://nextjs.org/docs/app/building-your-application/data-fetching'],
   quality: { overall: 0.8 },
   priority: 100,
 };
@@ -30,7 +30,7 @@ test('normalizePath: strips local prefix, duplicate slashes, backslashes, and li
 });
 
 test('primarySkillRule: picks the first skill-rule citation', () => {
-  assert.equal(primarySkillRule(baseRec), 'vercel-react-best-practices:async-parallel');
+  assert.equal(primarySkillRule(baseRec), 'nerdfish-react-best-practices:async-parallel');
 });
 
 test('fixShape: normalizes code and numeric noise into a stable shape', () => {
@@ -131,8 +131,8 @@ test('dedupeRecommendations: folds Suspense boundary recs for the same async hel
       'apps/docs-app/app/[rootFlagsCode]/kb/guide/[...segments]/components/kb-guide-content-section.tsx',
     ],
     citations: [
-      'vercel-react-best-practices:async-suspense-boundaries',
-      'vercel-react-best-practices:server-parallel-fetching',
+      'nerdfish-react-best-practices:async-suspense-boundaries',
+      'nerdfish-react-best-practices:server-parallel-fetching',
     ],
     candidateRef: 'slow_route:/[rootFlagsCode]/kb/guide/[...segments]',
     priority: 100,
@@ -158,7 +158,7 @@ test('dedupeRecommendations: keeps distinct fix shapes separate', () => {
   const other = {
     ...baseRec,
     fix: '1. Add Cache-Control with s-maxage=300.\n2. Verify cache_result=HIT.',
-    citations: ['vercel-react-best-practices:cache-control'],
+    citations: ['nerdfish-react-best-practices:cache-control'],
     candidateRef: 'uncached_route:/product',
   };
   const out = dedupeRecommendations([baseRec, other]);

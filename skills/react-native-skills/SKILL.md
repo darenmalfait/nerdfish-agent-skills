@@ -1,5 +1,5 @@
 ---
-name: vercel-react-native-skills
+name: nerdfish-react-native-skills
 description:
   React Native and Expo best practices for building performant mobile apps. Use
   when building React Native components, optimizing list performance,
@@ -7,7 +7,7 @@ description:
   involving React Native, Expo, mobile performance, or native platform APIs.
 license: MIT
 metadata:
-  author: vercel
+  author: nerdfish
   version: '1.0.0'
 ---
 

@@ -4,9 +4,9 @@ Guidance for AI coding agents working in this repository.
 
 ## Repository Overview
 
-A collection of skills for AI coding agents. Includes the full
-[vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) set
-(vendored) plus nerdfish-authored skills.
+A collection of skills for AI coding agents. Core skills are adapted from
+[vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) and
+renamed to `nerdfish-*`, plus nerdfish-authored overlays.
 
 Format: [Agent Skills](https://agentskills.io/).
 
@@ -27,16 +27,12 @@ skills/
 ### Naming
 
 - **Skill directory**: `kebab-case`
-- **SKILL.md**: always this exact filename
+- **SKILL.md `name:`**: `nerdfish-*` prefix
 - Prefer incorrect/correct code examples over long prose
 - Keep skills portable — no single-repo paths unless generalized as examples
-
-### Do not silently fork Vercel skills
-
-Vendored Vercel directories (`react-best-practices`, `composition-patterns`, etc.)
-should stay close to upstream. Do **not** fork them. Nerdfish-only rules go in
-overlay skills (`code-quality`, `monorepo-architecture`, …) — never duplicate
-upstream content.
+- Core content from upstream keeps the same directory layout; do not fork a
+  second copy of the same rules. Overlays (`code-quality`,
+  `monorepo-architecture`, …) only add non-duplicated rules.
 
 ### SKILL.md Format
 

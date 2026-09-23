@@ -6,10 +6,10 @@
 			"title": "React",
 			"description": "Skills for building production-quality React and React Native interfaces.",
 			"skills": [
-				"vercel-react-best-practices",
-				"vercel-composition-patterns",
-				"vercel-react-view-transitions",
-				"vercel-react-native-skills"
+				"nerdfish-react-best-practices",
+				"nerdfish-composition-patterns",
+				"nerdfish-react-view-transitions",
+				"nerdfish-react-native-skills"
 			]
 		},
 		{
@@ -24,12 +24,17 @@
 		{
 			"title": "Design & Spec",
 			"description": "UI review and website specification audits.",
-			"skills": ["web-design-guidelines", "specification-website"]
+			"skills": [
+				"web-design-guidelines",
+				"specification-website"
+			]
 		},
 		{
 			"title": "Writing",
 			"description": "Docs and prose against the Vercel writing handbook.",
-			"skills": ["writing-guidelines"]
+			"skills": [
+				"writing-guidelines"
+			]
 		},
 		{
 			"title": "Architecture & Quality",

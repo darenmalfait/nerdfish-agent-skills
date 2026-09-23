@@ -5,8 +5,8 @@ and scripts that extend agent capabilities.
 
 Skills follow the [Agent Skills](https://agentskills.io/) format.
 
-**Model:** full [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills)
-clone + nerdfish overlays only (no forks that duplicate upstream).
+**Model:** skills originally from [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills),
+renamed to `nerdfish-*` where generic; Vercel-specific skills keep `vercel-*` / `deploy-to-vercel`. Nerdfish overlays add non-duplicated rules.
 
 ## Skill package layout (rule-based skills)
 
@@ -27,17 +27,17 @@ Thin skills (`web-design-guidelines`, `writing-guidelines`,
 
 ## Available Skills
 
-### From Vercel (vendored)
+### Core (vendored from Vercel, renamed)
 
 | Dir | Skill `name` |
 | --- | ------------ |
 | `vercel-optimize` | `vercel-optimize` |
-| `react-best-practices` | `vercel-react-best-practices` |
+| `react-best-practices` | `nerdfish-react-best-practices` |
 | `web-design-guidelines` | `web-design-guidelines` |
 | `writing-guidelines` | `writing-guidelines` |
-| `react-native-skills` | `vercel-react-native-skills` |
-| `react-view-transitions` | `vercel-react-view-transitions` |
-| `composition-patterns` | `vercel-composition-patterns` |
+| `react-native-skills` | `nerdfish-react-native-skills` |
+| `react-view-transitions` | `nerdfish-react-view-transitions` |
+| `composition-patterns` | `nerdfish-composition-patterns` |
 | `deploy-to-vercel` | `deploy-to-vercel` |
 | `vercel-cli-with-tokens` | `vercel-cli-with-tokens` |
 
@@ -51,8 +51,8 @@ Thin skills (`web-design-guidelines`, `writing-guidelines`,
 | `monorepo-architecture` | `nerdfish-monorepo-architecture` |
 | `specification-website` | `specification-website` |
 
-Composition / early-return / ternary-vs-`&&` live in upstream
-`composition-patterns` + `react-best-practices` — not duplicated here.
+Composition / early-return / ternary-vs-`&&` live in
+`composition-patterns` + `react-best-practices` — not duplicated in overlays.
 
 ## Installation
 
@@ -83,8 +83,8 @@ node scripts/build-discovery-index.mjs https://example.com/skills
 
 ## Upstream
 
-Do not silently fork vendored Vercel skill dirs. Overlay = new skill name + only
-rules that are not already upstream.
+Upstream content stays in the renamed core skills. Overlay skills only add rules
+that are not already covered there.
 
 ## License
 

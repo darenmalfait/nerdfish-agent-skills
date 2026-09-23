@@ -264,7 +264,7 @@ const stubCitations = {
     { url: 'https://vercel.com/docs/fluid-compute', topic: 'Fluid Compute', appliesTo: ['slow_route'], applicableFrameworks: ['*'] },
   ],
   ruleSkillRefs: [
-    { skill: 'vercel-react-best-practices', rule: 'async-parallel', topic: 'Promise.all', applicableFrameworks: ['*'] },
+    { skill: 'nerdfish-react-best-practices', rule: 'async-parallel', topic: 'Promise.all', applicableFrameworks: ['*'] },
   ],
 };
 
