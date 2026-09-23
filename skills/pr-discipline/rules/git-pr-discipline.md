@@ -5,11 +5,11 @@ impactDescription: Do not push, open PRs, or commit unless explicitly asked
 tags: git, pull-request, workflow, agent
 ---
 
-# Git & PR discipline
+## Git & PR Discipline
 
 **Impact: HIGH**
 
-## Rules
+### Rules
 
 1. **Never push** (`git push`, `gh stack push`, etc.) unless the user explicitly
    asks.
@@ -17,7 +17,7 @@ tags: git, pull-request, workflow, agent
    `gh stack link`, etc.) unless the user explicitly asks.
 3. **Never commit** unless the user explicitly asks.
 
-## What "stack on top" means
+### What "stack on top" means
 
 When the user asks to put work on a stack or new branch:
 
@@ -27,12 +27,12 @@ When the user asks to put work on a stack or new branch:
 
 Do **not** push or open a PR as a follow-up unless they ask.
 
-## Allowed without asking
+### Allowed without asking
 
 - Local git: `status`, `diff`, `log`, `branch`
 - Explain what branch/PR commands _would_ be run, and wait for approval
 
-## Examples
+### Examples
 
 **User:** "implement X and put it on a new stack on top of Y"
 

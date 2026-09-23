@@ -1,5 +1,5 @@
 ---
-name: code-quality
+name: nerdfish-code-quality
 description: >
   Code quality standards: clarity over cleverness, comments that explain why
   not what, and thorough code review that addresses nits before merge. Use when
@@ -17,19 +17,42 @@ Standards for readable, maintainable code and rigorous review.
 
 ## When to Apply
 
+Reference these guidelines when:
+
 - Writing or simplifying application code
 - Adding comments
 - Reviewing pull requests
 - Challenging “good enough for now” shortcuts
 
+## Rule Categories by Priority
+
+| Priority | Category     | Impact | Prefix     |
+| -------- | ------------ | ------ | ---------- |
+| 1        | Code Quality | HIGH   | `quality-` |
+
 ## Quick Reference
 
-| Rule                         | Impact | File                                      |
-| ---------------------------- | ------ | ----------------------------------------- |
-| Clarity over cleverness      | HIGH   | `rules/quality-simplicity.md`             |
-| Comments explain why         | MEDIUM | `rules/quality-code-comments.md`          |
-| Address all nits before merge| HIGH   | `rules/quality-thorough-code-review.md`   |
+### 1. Code Quality (HIGH)
+
+- `quality-simplicity` - Clarity over cleverness
+- `quality-code-comments` - Comments explain why, not what
+- `quality-thorough-code-review` - Address all nits before merge
 
 ## How to Use
 
-Read the rule files under `rules/` for incorrect/correct examples.
+Read individual rule files for detailed explanations and code examples:
+
+```
+rules/quality-simplicity.md
+rules/quality-code-comments.md
+rules/quality-thorough-code-review.md
+```
+
+Each rule file contains:
+
+- Brief explanation of why it matters
+- Incorrect / correct examples
+
+## Full Compiled Document
+
+For the complete guide with all rules expanded: `AGENTS.md`

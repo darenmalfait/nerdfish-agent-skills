@@ -1,0 +1,7 @@
+{
+	"version": "1.0.0",
+	"organization": "nerdfish",
+	"date": "September 2026",
+	"abstract": "Playwright BDD structure (User Story → Given → When) and accessible query preferences.",
+	"references": ["https://playwright.dev"]
+}

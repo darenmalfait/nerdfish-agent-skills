@@ -1,5 +1,5 @@
 ---
-name: playwright-bdd
+name: nerdfish-playwright-bdd
 description: >
   Playwright BDD structure (User Story → Given → When) and accessible query
   preferences (role/label over testId/CSS). Use when writing or reviewing
@@ -17,17 +17,34 @@ Specs tell a story. Selectors go in page objects. Query the UI the way a user
 
 ## When to Apply
 
+Reference these guidelines when:
+
 - Writing new Playwright specs
 - Reviewing e2e tests
 - Designing page objects / fixtures
 
+## Rule Categories by Priority
+
+| Priority | Category | Impact | Prefix     |
+| -------- | -------- | ------ | ---------- |
+| 1        | Testing  | HIGH   | `testing-` |
+
 ## Quick Reference
 
-| Rule                      | File                                   |
-| ------------------------- | -------------------------------------- |
-| BDD structure             | `rules/testing-bdd-structure.md`       |
-| Accessible test queries   | `rules/testing-accessible-queries.md`  |
+### 1. Testing (HIGH)
+
+- `testing-bdd-structure` - User Story → Given → When nesting
+- `testing-accessible-queries` - Prefer role/label over testId/CSS
 
 ## How to Use
 
-Read the rule files under `rules/` for incorrect/correct examples.
+Read individual rule files for detailed explanations and code examples:
+
+```
+rules/testing-bdd-structure.md
+rules/testing-accessible-queries.md
+```
+
+## Full Compiled Document
+
+For the complete guide with all rules expanded: `AGENTS.md`

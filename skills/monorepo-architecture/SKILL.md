@@ -1,5 +1,5 @@
 ---
-name: monorepo-architecture
+name: nerdfish-monorepo-architecture
 description: >
   Monorepo architecture patterns: organize app code by domain (vertical slices)
   and keep an acyclic package dependency graph. Use when structuring features,
@@ -17,24 +17,31 @@ Organize by domain, not by technical layer. Keep the dependency graph acyclic.
 
 ## When to Apply
 
+Reference these guidelines when:
+
 - Deciding where new code lives (package vs feature vs route)
 - Reviewing cross-package / cross-feature imports
-- Refactoring layered `components/` + `api/` + `utils/` folders into slices
+- Refactoring layered folders into slices
 - Hunting circular dependencies
 
 ## Rule Categories by Priority
 
-| Priority | Category            | Impact   | Prefix           |
-| -------- | ------------------- | -------- | ---------------- |
-| 1        | Vertical slices     | CRITICAL | `architecture-`  |
-| 2        | Acyclic dependencies| CRITICAL | `architecture-`  |
+| Priority | Category             | Impact   | Prefix           |
+| -------- | -------------------- | -------- | ---------------- |
+| 1        | Vertical slices      | CRITICAL | `architecture-`  |
+| 2        | Acyclic dependencies | CRITICAL | `architecture-`  |
 
 ## Quick Reference
 
-- `architecture-vertical-slices` — domain folders under `features/`; routes
+### 1. Vertical slices (CRITICAL)
+
+- `architecture-vertical-slices` - Domain folders under `features/`; routes
   compose blocks; no `*-page` composers in features
-- `architecture-circular-dependencies` — `lib` → `@repo/*` → `features` → `app`;
-  never import upward
+
+### 2. Acyclic dependencies (CRITICAL)
+
+- `architecture-circular-dependencies` - lib → packages → features → app; never
+  import upward
 
 ## How to Use
 
@@ -42,3 +49,7 @@ Organize by domain, not by technical layer. Keep the dependency graph acyclic.
 rules/architecture-vertical-slices.md
 rules/architecture-circular-dependencies.md
 ```
+
+## Full Compiled Document
+
+For the complete guide with all rules expanded: `AGENTS.md`

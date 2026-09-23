@@ -1,0 +1,7 @@
+{
+	"version": "1.0.0",
+	"organization": "nerdfish",
+	"date": "September 2026",
+	"abstract": "Monorepo architecture: vertical domain slices and an acyclic package dependency graph.",
+	"references": []
+}

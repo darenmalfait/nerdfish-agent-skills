@@ -6,12 +6,12 @@
 			"title": "React",
 			"description": "Skills for building production-quality React and React Native interfaces.",
 			"skills": [
-				"react-best-practices",
-				"react-best-practises",
-				"composition-patterns",
-				"composition-early-returns",
-				"react-view-transitions",
-				"react-native-skills"
+				"vercel-react-best-practices",
+				"nerdfish-react-best-practises",
+				"vercel-composition-patterns",
+				"nerdfish-composition-early-returns",
+				"vercel-react-view-transitions",
+				"vercel-react-native-skills"
 			]
 		},
 		{
@@ -37,10 +37,10 @@
 			"title": "Architecture & Quality",
 			"description": "Monorepo structure, code quality, tests, and PR discipline.",
 			"skills": [
-				"monorepo-architecture",
-				"code-quality",
-				"playwright-bdd",
-				"pr-discipline"
+				"nerdfish-monorepo-architecture",
+				"nerdfish-code-quality",
+				"nerdfish-playwright-bdd",
+				"nerdfish-pr-discipline"
 			]
 		}
 	]

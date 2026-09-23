@@ -1,5 +1,5 @@
 ---
-name: react-best-practises
+name: nerdfish-react-best-practises
 description:
   React and Next.js performance optimization guidelines. This skill should be
   used when writing, reviewing, or refactoring React/Next.js code to ensure

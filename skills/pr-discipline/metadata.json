@@ -1,0 +1,7 @@
+{
+	"version": "1.0.0",
+	"organization": "nerdfish",
+	"date": "September 2026",
+	"abstract": "Git and PR discipline for agents: never push/PR/commit unless asked; prefer small draft stacked PRs.",
+	"references": []
+}
