@@ -16,11 +16,11 @@ const outputDirectory = 'dist';
 const archiveEnvironment = {
   ...process.env,
   GIT_AUTHOR_DATE: '2000-01-01T00:00:00Z',
-  GIT_AUTHOR_EMAIL: 'agent-skills@vercel.com',
-  GIT_AUTHOR_NAME: 'Agent Skills',
+  GIT_AUTHOR_EMAIL: 'agent-skills@nerdfish.be',
+  GIT_AUTHOR_NAME: 'Nerdfish Agent Skills',
   GIT_COMMITTER_DATE: '2000-01-01T00:00:00Z',
-  GIT_COMMITTER_EMAIL: 'agent-skills@vercel.com',
-  GIT_COMMITTER_NAME: 'Agent Skills',
+  GIT_COMMITTER_EMAIL: 'agent-skills@nerdfish.be',
+  GIT_COMMITTER_NAME: 'Nerdfish Agent Skills',
 };
 
 if (!baseUrl) {
@@ -75,7 +75,7 @@ const createArchive = (directory) => {
   const commit = execFileSync('git', ['commit-tree', tree], {
     encoding: 'utf8',
     env: archiveEnvironment,
-    input: 'Agent Skills archive\n',
+    input: 'Nerdfish Agent Skills archive\n',
   }).trim();
   const tar = execFileSync('git', ['archive', '--format=tar', commit]);
   return execFileSync('gzip', ['-n', '-9', '-c'], { input: tar });

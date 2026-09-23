@@ -66,7 +66,15 @@ Single skill:
 npx skills add darenmalfait/nerdfish-agent-skills --skill monorepo-architecture
 ```
 
+Listed on [skills.sh](https://skills.sh) after discovery releases publish (see
+`.github/workflows/agent-skills-discovery.yml`).
+
 ## Discovery index
+
+On every push to `main` that touches `skills/**`, CI builds the Agent Skills
+discovery index and publishes a GitHub Release with artifacts.
+
+Locally:
 
 ```bash
 npm ci --ignore-scripts
