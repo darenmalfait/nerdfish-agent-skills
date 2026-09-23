@@ -8,5 +8,5 @@ The section ID (in parentheses) is the filename prefix used to group rules.
 ## 1. Testing (testing)
 
 **Impact:** HIGH  
-**Description:** Playwright BDD structure and accessible query preferences for
-e2e specs and page objects.
+**Description:** User-story BDD nesting and accessible query preferences for
+any user-facing test runner.

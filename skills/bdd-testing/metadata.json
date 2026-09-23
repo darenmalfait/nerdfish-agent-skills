@@ -1,0 +1,10 @@
+{
+	"version": "1.0.0",
+	"organization": "nerdfish",
+	"date": "September 2026",
+	"abstract": "User-story BDD structure (User Story → Given → When) and accessible query preferences for any user-facing test runner.",
+	"references": [
+		"https://testing-library.com/docs/queries/about",
+		"https://playwright.dev/docs/locators"
+	]
+}

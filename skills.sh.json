@@ -37,7 +37,7 @@
 			"skills": [
 				"nerdfish-monorepo-architecture",
 				"nerdfish-code-quality",
-				"nerdfish-playwright-bdd",
+				"nerdfish-bdd-testing",
 				"nerdfish-pr-discipline"
 			]
 		}

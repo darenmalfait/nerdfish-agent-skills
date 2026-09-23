@@ -1,6 +1,7 @@
-# Playwright BDD
+# BDD Testing
 
-Structured rules for Playwright BDD specs and accessible selectors.
+Structured rules for user-story BDD specs and accessible selectors. Runner-
+agnostic (Playwright, Testing Library, Cypress, …).
 
 ## Structure
 

@@ -2,7 +2,7 @@
 title: Rule Title Here
 impact: MEDIUM
 impactDescription: brief description of impact
-tags: testing, playwright
+tags: testing, bdd
 ---
 
 ## Rule Title Here

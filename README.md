@@ -46,7 +46,7 @@ Thin skills (`web-design-guidelines`, `writing-guidelines`,
 | Dir | Skill `name` |
 | --- | ------------ |
 | `code-quality` | `nerdfish-code-quality` |
-| `playwright-bdd` | `nerdfish-playwright-bdd` |
+| `bdd-testing` | `nerdfish-bdd-testing` |
 | `pr-discipline` | `nerdfish-pr-discipline` |
 | `monorepo-architecture` | `nerdfish-monorepo-architecture` |
 | `specification-website` | `specification-website` |
