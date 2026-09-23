@@ -1,0 +1,6 @@
+{
+	"name": "@nerdfish/agent-skills",
+	"private": true,
+	"type": "module",
+	"description": "Nerdfish agent skills for AI coding agents"
+}
