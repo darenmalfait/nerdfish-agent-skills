@@ -45,11 +45,15 @@ Thin skills (`web-design-guidelines`, `writing-guidelines`,
 
 | Dir | Skill `name` |
 | --- | ------------ |
+| `nerdfish-review` | `nerdfish-review` |
 | `code-quality` | `nerdfish-code-quality` |
 | `bdd-testing` | `nerdfish-bdd-testing` |
 | `pr-discipline` | `nerdfish-pr-discipline` |
 | `monorepo-architecture` | `nerdfish-monorepo-architecture` |
 | `specification-website` | `specification-website` |
+
+`nerdfish-review` is the meta-skill: ask for a “nerdfish review” to analyze the
+current diff against all `nerdfish-*` skills in priority order.
 
 Composition / early-return / ternary-vs-`&&` live in
 `composition-patterns` + `react-best-practices` — not duplicated in overlays.
@@ -63,8 +67,10 @@ npx skills add darenmalfait/nerdfish-agent-skills
 Single skill:
 
 ```bash
-npx skills add darenmalfait/nerdfish-agent-skills --skill monorepo-architecture
+npx skills add darenmalfait/nerdfish-agent-skills --skill nerdfish-review
 ```
+
+Then: “nerdfish review” / “analyze my changes with nerdfish skills”.
 
 Listed on [skills.sh](https://skills.sh) after discovery releases publish (see
 `.github/workflows/agent-skills-discovery.yml`).

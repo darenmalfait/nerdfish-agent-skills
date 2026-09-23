@@ -38,8 +38,9 @@
 		},
 		{
 			"title": "Architecture & Quality",
-			"description": "Monorepo structure, code quality, tests, and PR discipline.",
+			"description": "Monorepo structure, code quality, tests, PR discipline, and full nerdfish review.",
 			"skills": [
+				"nerdfish-review",
 				"nerdfish-monorepo-architecture",
 				"nerdfish-code-quality",
 				"nerdfish-bdd-testing",
