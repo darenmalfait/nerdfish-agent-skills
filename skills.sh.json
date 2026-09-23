@@ -4,26 +4,44 @@
 	"groupings": [
 		{
 			"title": "React",
-			"description": "Performance and composition patterns for React and Next.js.",
+			"description": "Skills for building production-quality React and React Native interfaces.",
 			"skills": [
+				"react-best-practices",
 				"react-best-practises",
-				"composition-patterns"
+				"composition-patterns",
+				"composition-early-returns",
+				"react-view-transitions",
+				"react-native-skills"
 			]
 		},
 		{
-			"title": "Quality",
-			"description": "Code quality, reviews, and PR discipline.",
-			"skills": ["code-quality", "pr-discipline"]
+			"title": "Vercel",
+			"description": "Skills for deploying, managing, and optimizing applications on Vercel.",
+			"skills": [
+				"deploy-to-vercel",
+				"vercel-cli-with-tokens",
+				"vercel-optimize"
+			]
 		},
 		{
-			"title": "Testing",
-			"description": "Playwright BDD and accessible query patterns.",
-			"skills": ["playwright-bdd"]
+			"title": "Design & Spec",
+			"description": "UI review and website specification audits.",
+			"skills": ["web-design-guidelines", "specification-website"]
 		},
 		{
-			"title": "Design",
-			"description": "UI review against web interface guidelines.",
-			"skills": ["web-design-guidelines"]
+			"title": "Writing",
+			"description": "Docs and prose against the Vercel writing handbook.",
+			"skills": ["writing-guidelines"]
+		},
+		{
+			"title": "Architecture & Quality",
+			"description": "Monorepo structure, code quality, tests, and PR discipline.",
+			"skills": [
+				"monorepo-architecture",
+				"code-quality",
+				"playwright-bdd",
+				"pr-discipline"
+			]
 		}
 	]
 }

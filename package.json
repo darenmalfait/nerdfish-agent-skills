@@ -2,5 +2,8 @@
 	"name": "@nerdfish/agent-skills",
 	"private": true,
 	"type": "module",
-	"description": "Nerdfish agent skills for AI coding agents"
+	"description": "Nerdfish agent skills for AI coding agents (includes vercel-labs/agent-skills)",
+	"dependencies": {
+		"yaml": "2.9.0"
+	}
 }
