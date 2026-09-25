@@ -14,12 +14,8 @@
 		},
 		{
 			"title": "Vercel",
-			"description": "Skills for deploying, managing, and optimizing applications on Vercel.",
-			"skills": [
-				"deploy-to-vercel",
-				"vercel-cli-with-tokens",
-				"vercel-optimize"
-			]
+			"description": "Skills for optimizing applications on Vercel.",
+			"skills": ["vercel-optimize"]
 		},
 		{
 			"title": "Design & Spec",
@@ -27,13 +23,6 @@
 			"skills": [
 				"web-design-guidelines",
 				"specification-website"
-			]
-		},
-		{
-			"title": "Writing",
-			"description": "Docs and prose against the Vercel writing handbook.",
-			"skills": [
-				"writing-guidelines"
 			]
 		},
 		{

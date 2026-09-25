@@ -6,7 +6,8 @@ and scripts that extend agent capabilities.
 Skills follow the [Agent Skills](https://agentskills.io/) format.
 
 **Model:** skills originally from [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills),
-renamed to `nerdfish-*` where generic; Vercel-specific skills keep `vercel-*` / `deploy-to-vercel`. Nerdfish overlays add non-duplicated rules.
+renamed to `nerdfish-*` where generic; keep `vercel-optimize` for Vercel
+runtime guidance. Nerdfish overlays add non-duplicated rules.
 
 ## Skill package layout (rule-based skills)
 
@@ -22,8 +23,8 @@ skills/{skill-name}/
     {prefix}-{name}.md
 ```
 
-Thin skills (`web-design-guidelines`, `writing-guidelines`,
-`specification-website`) are `SKILL.md`-only — same as upstream.
+Thin skills (`web-design-guidelines`, `specification-website`) are
+`SKILL.md`-only — same as upstream.
 
 ## Available Skills
 
@@ -34,12 +35,9 @@ Thin skills (`web-design-guidelines`, `writing-guidelines`,
 | `vercel-optimize` | `vercel-optimize` |
 | `react-best-practices` | `nerdfish-react-best-practices` |
 | `web-design-guidelines` | `web-design-guidelines` |
-| `writing-guidelines` | `writing-guidelines` |
 | `react-native-skills` | `nerdfish-react-native-skills` |
 | `react-view-transitions` | `nerdfish-react-view-transitions` |
 | `composition-patterns` | `nerdfish-composition-patterns` |
-| `deploy-to-vercel` | `deploy-to-vercel` |
-| `vercel-cli-with-tokens` | `vercel-cli-with-tokens` |
 
 ### Nerdfish (overlay only)
 
